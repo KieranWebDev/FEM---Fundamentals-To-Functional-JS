@@ -28,10 +28,26 @@
 //   weapon: 'candlestick',
 // };
 
-const { name, weapon, room } = {
-  name: 'Rusty',
-  room: 'kitchen',
-  weapon: 'candlestick',
+// const { name, weapon, room } = {
+//   name: 'Rusty',
+//   room: 'kitchen',
+//   weapon: 'candlestick',
+// };
+// console.log(name);
+// console.log(room);
+const game = {
+  suspects: [
+    {
+      name: 'rusty',
+      color: 'orange',
+    },
+    {
+      name: 'miss scarlett',
+      color: 'red',
+    },
+  ],
 };
-console.log(name);
-console.log(room);
+
+for (let i = 0; i < game.suspects.length; i++) {
+  console.log(game.suspects[i]);
+}
