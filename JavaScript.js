@@ -48,6 +48,16 @@ const game = {
   ],
 };
 
+var suspects = [
+  {
+    name: 'rusty',
+    color: 'orange',
+  },
+  {
+    name: 'miss scarlett',
+    color: 'red',
+  },
+];
 // for (let i = 0; i < game.suspects.length; i++) {
 //   console.log(game.suspects[i]);
 // }
@@ -64,3 +74,9 @@ function gameLoop() {
 }
 
 gameLoop();
+
+const firstColor = game.suspects[0].color;
+console.log(`oi, ${firstColor}`);
+
+const [color1, color2] = [suspects[0].color, suspects[1].color];
+console.log(color1, color2);
