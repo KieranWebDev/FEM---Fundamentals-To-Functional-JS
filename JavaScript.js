@@ -48,6 +48,19 @@ const game = {
   ],
 };
 
-for (let i = 0; i < game.suspects.length; i++) {
-  console.log(game.suspects[i]);
+// for (let i = 0; i < game.suspects.length; i++) {
+//   console.log(game.suspects[i]);
+// }
+
+function gameLoop() {
+  for (let i = 0; i < game.suspects.length; i++) {
+    for (var key in game.suspects[i]) {
+      console.log(key);
+      if (game.suspects[i][key] === 'rusty') {
+        console.log(`it was you Rusty!! `);
+      }
+    }
+  }
 }
+
+gameLoop();
